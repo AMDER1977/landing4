@@ -7,6 +7,7 @@
 }
 * {
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -15,7 +16,6 @@ html {
 }
 
 body {
-  font-family: "Arial", sans-serif;
   color: var(--white);
   margin: 0;
   padding: 0;
@@ -24,23 +24,46 @@ body {
 
 .up-container {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
+  flex-direction: wrap;
+  /* align-items: flex-start; */
+  flex: 2;
+  padding: 1rem;
 }
 
-.up-container h1 {
-  margin-right: auto; /* Mueve el h1 a la izquierda */
+.up-container .title-and-text {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  margin-top: 4rem;
+}
+.up-container .title-and-text h1 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+.up-container .title-and-text p {
+  margin-bottom: 2rem;
+  font-size: medium;
+}
+.up-container .title-and-text button {
+  margin-top: 2rem;
+  width: 12rem;
+  height: 4rem;
+  border-radius: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .up-figure-container {
   display: flex;
-  justify-content: flex-end; /* Mueve las imágenes a la derecha */
-  margin-top: 20px;
+  flex-direction: row;
+  margin-top: 0;
+  /* justify-content: flex-end; */
+  margin-left: auto;
 }
 
-.up-figure-container figure {
-  margin-left: 10px; /* Espacio entre las imágenes */
+.up-figure-container figure img {
+  width: 30rem;
+  height: 30rem;
 }
 
 .medium-container {
@@ -77,5 +100,5 @@ body {
 }
 
 .footer-container figure {
-  margin-right: 10px; /* Espacio entre las imágenes del pie de página */
+  margin-right: 10px;
 }
