@@ -13,3 +13,10 @@
 html {
   font-size: 62.5%;
 }
+
+body {
+  background-color: var(--dark-blue);
+}
+.up-container {
+  color: var(--white);
+}
