@@ -15,8 +15,67 @@ html {
 }
 
 body {
+  font-family: "Arial", sans-serif;
+  color: var(--white);
+  margin: 0;
+  padding: 0;
   background-color: var(--dark-blue);
 }
+
 .up-container {
-  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.up-container h1 {
+  margin-right: auto; /* Mueve el h1 a la izquierda */
+}
+
+.up-figure-container {
+  display: flex;
+  justify-content: flex-end; /* Mueve las imágenes a la derecha */
+  margin-top: 20px;
+}
+
+.up-figure-container figure {
+  margin-left: 10px; /* Espacio entre las imágenes */
+}
+
+.medium-container {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.medium-container figure {
+  margin-right: 3rem;
+}
+.medium-container span {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+.medium-container .span-container img {
+  width: 5rem;
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+.medium-container .span-container .span-number {
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-container figure {
+  margin-right: 10px; /* Espacio entre las imágenes del pie de página */
 }
