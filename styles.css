@@ -1,5 +1,15 @@
+/*font-family: 'Lato', sans-serif;*/
+:root {
+  --light-grey: rgba(217, 217, 217, 1);
+  --dark-black: rgba(1, 6, 37, 1);
+  --dark-blue: rgba(1, 6, 45, 1);
+  --white: rgba(255, 255, 255, 1);
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+html {
+  font-size: 62.5%;
 }
